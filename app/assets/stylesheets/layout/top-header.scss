@@ -31,46 +31,23 @@
         align-items: center;
         flex-direction: column;
         &-home{
-          height: auto;
-          width: auto;
-          margin-bottom: 50px;
+          @include button-boxes;
           .home-button{
-            border-radius: 4px;
-            display: inline-block;
-            width: auto;
-            text-align: center;
-            background-color: white;
-            border: 2px solid white;
-            font-size: 40px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 24px;
-            border-radius: 4px;
-            position: relative;
+            @include buttons;
             .fa-home{
               margin-right: 10px;
             }
           }
           .home-button i{
-            position: relative;
-            z-index: 1;
+            @include header-hover-icon;
           }
           .home-button span {
-            position: relative;
-            z-index: 1;
+            @include header-hover-span
           }
           
           .home-button::before,
           .home-button::after {
-            content: "";
-            display: block;
-            background-color: rgb(99, 99, 245);
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            transition: .2s;
+            @include header-hover-after1;
           }
           .home-button::before {
             left: 0;
@@ -80,24 +57,77 @@
           }
           .home-button:hover:before,
           .home-button:hover:after {
-            width: 0;
-            background-color: rgb(99, 99, 245);
+            @include header-hover-after2;
           }
           .home-button:hover {
-            color: rgb(99, 99, 245);
+            @include header-hover-color;
           }
         }
         &-profile{
-          background-color: green;
-          height: auto;
-          width: auto;
-          padding-bottom: 100px;
+          @include button-boxes;
+          .profile-button{
+            @include buttons;
+            .fa-id-card{
+              margin-right: 10px;
+            }
+          }
+          .profile-button i{
+            @include header-hover-icon;
+          }
+          .profile-button span {
+            @include header-hover-span
+          }
+          
+          .profile-button::before,
+          .profile-button::after {
+            @include header-hover-after1;
+          }
+          .profile-button::before {
+            left: 0;
+          }
+          .profile-button::after {
+            right: 0;
+          }
+          .profile-button:hover:before,
+          .profile-button:hover:after {
+            @include header-hover-after2;
+          }
+          .profile-button:hover {
+            @include header-hover-color;
+          }
         }
-        &-more{
-          background-color: yellow;
-          height: auto;
-          width: auto;
-          padding-bottom: 100px;
+        &-DM{
+          @include button-boxes;
+          .DM-button{
+            @include buttons;
+            .fa-envelope{
+              margin-right: 10px;
+            }
+          }
+          .DM-button i{
+            @include header-hover-icon;
+          }
+          .DM-button span {
+            @include header-hover-span
+          }
+          
+          .DM-button::before,
+          .DM-button::after {
+            @include header-hover-after1;
+          }
+          .DM-button::before {
+            left: 0;
+          }
+          .DM-button::after {
+            right: 0;
+          }
+          .DM-button:hover:before,
+          .DM-button:hover:after {
+            @include header-hover-after2;
+          }
+          .DM-button:hover {
+            @include header-hover-color;
+          }
         }
       }
     }

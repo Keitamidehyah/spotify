@@ -10,6 +10,7 @@ body {
   overflow: hidden;
 }
 
+ @import "mixin/form";
  @import "layout/top-header";
  @import "font-awesome-sprockets";
  @import "font-awesome";
