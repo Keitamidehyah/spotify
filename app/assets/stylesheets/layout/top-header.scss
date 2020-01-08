@@ -1,0 +1,28 @@
+.header{
+  width: 26%;
+  height: 100vw;
+  background-color: rgb(34, 34, 77);
+  &-box{
+    padding: 30px;
+    margin: 0 auto;
+    height: 100%;
+    width: 60%;
+    &-top{
+      padding-bottom: 100px;
+      width: auto;
+      height: auto;
+      &-vinyl{
+        user-select: none;
+        width: auto;
+        height: auto;
+        .fa-compact-disc{
+          font-size: 100px;
+          color: white;
+        }
+      }
+    }
+    &-low{
+      
+    }
+  }
+}
