@@ -2,13 +2,14 @@
   width: 26%;
   height: 100vw;
   background-color: rgb(34, 34, 77);
+  position: sticky;
   &-box{
     padding: 30px;
     margin: 0 auto;
     height: 100%;
     width: 60%;
     &-top{
-      padding-bottom: 100px;
+      margin-bottom: 100px;
       width: auto;
       height: auto;
       &-vinyl{
@@ -21,8 +22,84 @@
         }
       }
     }
-    &-low{
-      
+    &-lowbox{
+      height: 30%;
+      width: auto;
+      &-navs{
+        height: auto;
+        width: auto;
+        align-items: center;
+        flex-direction: column;
+        &-home{
+          height: auto;
+          width: auto;
+          margin-bottom: 50px;
+          .home-button{
+            border-radius: 4px;
+            display: inline-block;
+            width: auto;
+            text-align: center;
+            background-color: white;
+            border: 2px solid white;
+            font-size: 40px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 24px;
+            border-radius: 4px;
+            position: relative;
+            .fa-home{
+              margin-right: 10px;
+            }
+          }
+          .home-button i{
+            position: relative;
+            z-index: 1;
+          }
+          .home-button span {
+            position: relative;
+            z-index: 1;
+          }
+          
+          .home-button::before,
+          .home-button::after {
+            content: "";
+            display: block;
+            background-color: rgb(99, 99, 245);
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: .2s;
+          }
+          .home-button::before {
+            left: 0;
+          }
+          .home-button::after {
+            right: 0;
+          }
+          .home-button:hover:before,
+          .home-button:hover:after {
+            width: 0;
+            background-color: rgb(99, 99, 245);
+          }
+          .home-button:hover {
+            color: rgb(99, 99, 245);
+          }
+        }
+        &-profile{
+          background-color: green;
+          height: auto;
+          width: auto;
+          padding-bottom: 100px;
+        }
+        &-more{
+          background-color: yellow;
+          height: auto;
+          width: auto;
+          padding-bottom: 100px;
+        }
+      }
     }
   }
 }
