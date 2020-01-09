@@ -1,0 +1,168 @@
+.header{
+  width: 25%;
+  height: 100vw;
+  background-color: rgb(34, 34, 77);
+  position: sticky;
+  border-right: 0.2px solid white;
+  &-box{
+    padding: 30px;
+    margin: 0 auto;
+    height: 100%;
+    width: 60%;
+    &-top{
+      margin-bottom: 100px;
+      width: auto;
+      height: auto;
+      &-vinyl{
+        width: 100vh;
+        height: 100vh;
+        .fa-compact-disc{
+          font-size: 100px;
+          color: white;
+        }
+      }
+    }
+    &-lowbox{
+      height: 30%;
+      width: 100%;
+      &-navs{
+        height: auto;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        &-home{
+          @include button-boxes;
+          .home-button{
+            @include buttons;
+            .fa-home{
+              margin-right: 10px;
+            }
+          }
+          .home-button i{
+            @include header-hover-icon;
+          }
+          .home-button span {
+            @include header-hover-span
+          }
+          
+          .home-button::before,
+          .home-button::after {
+            @include header-hover-after1;
+          }
+          .home-button::before {
+            left: 0;
+          }
+          .home-button::after {
+            right: 0;
+          }
+          .home-button:hover:before,
+          .home-button:hover:after {
+            @include header-hover-after2;
+          }
+          .home-button:hover {
+            @include header-hover-color;
+          }
+        }
+        &-profile{
+          @include button-boxes;
+          .profile-button{
+            @include buttons;
+            .fa-id-card{
+              margin-right: 10px;
+            }
+          }
+          .profile-button i{
+            @include header-hover-icon;
+          }
+          .profile-button span {
+            @include header-hover-span
+          }
+          
+          .profile-button::before,
+          .profile-button::after {
+            @include header-hover-after1;
+          }
+          .profile-button::before {
+            left: 0;
+          }
+          .profile-button::after {
+            right: 0;
+          }
+          .profile-button:hover:before,
+          .profile-button:hover:after {
+            @include header-hover-after2;
+          }
+          .profile-button:hover {
+            @include header-hover-color;
+          }
+        }
+        &-DM{
+          @include button-boxes;
+          .DM-button{
+            @include buttons;
+            .fa-envelope{
+              margin-right: 10px;
+            }
+          }
+          .DM-button i{
+            @include header-hover-icon;
+          }
+          .DM-button span {
+            @include header-hover-span
+          }
+          
+          .DM-button::before,
+          .DM-button::after {
+            @include header-hover-after1;
+          }
+          .DM-button::before {
+            left: 0;
+          }
+          .DM-button::after {
+            right: 0;
+          }
+          .DM-button:hover:before,
+          .DM-button:hover:after {
+            @include header-hover-after2;
+          }
+          .DM-button:hover {
+            @include header-hover-color;
+          }
+        }
+        &-review{
+          @include button-boxes;
+          .review-button{
+            @include buttons;
+            .fa-apple{
+              margin-right: 10px;
+            }
+          }
+          .review-button i{
+            @include header-hover-icon;
+          }
+          .review-button span {
+            @include header-hover-span
+          }
+          
+          .review-button::before,
+          .review-button::after {
+            @include header-hover-after1;
+          }
+          .review-button::before {
+            left: 0;
+          }
+          .review-button::after {
+            right: 0;
+          }
+          .review-button:hover:before,
+          .review-button:hover:after {
+            @include header-hover-after2;
+          }
+          .review-button:hover {
+            @include header-hover-color;
+          }
+        }
+      }
+    }
+  }
+}

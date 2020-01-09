@@ -1,0 +1,50 @@
+@mixin button-boxes{
+  height: auto;
+  width: auto;
+  margin-bottom: 70px;
+}
+
+@mixin buttons{
+  border-radius: 10px;
+  display: inline-block;
+  width: 260px;
+  background-color: white;
+  border: 2px solid white;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
+}
+
+@mixin header-hover-icon{
+  position: relative;
+  z-index: 1;
+}
+
+@mixin header-hover-span{
+  position: relative;
+  z-index: 1;
+}
+
+@mixin header-hover-after1{
+  content: "";
+  display: block;
+  background-color: rgb(99, 99, 245);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+
+@mixin header-hover-after2{
+  width: 0;
+  background-color: rgb(99, 99, 245);
+}
+
+@mixin header-hover-color{
+  color: rgb(99, 99, 245);
+}
