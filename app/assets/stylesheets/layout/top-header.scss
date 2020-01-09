@@ -1,8 +1,9 @@
 .header{
-  width: 26%;
+  width: 25%;
   height: 100vw;
   background-color: rgb(34, 34, 77);
   position: sticky;
+  border-right: 0.2px solid white;
   &-box{
     padding: 30px;
     margin: 0 auto;
@@ -13,9 +14,8 @@
       width: auto;
       height: auto;
       &-vinyl{
-        user-select: none;
-        width: auto;
-        height: auto;
+        width: 100vh;
+        height: 100vh;
         .fa-compact-disc{
           font-size: 100px;
           color: white;
@@ -24,10 +24,10 @@
     }
     &-lowbox{
       height: 30%;
-      width: auto;
+      width: 100%;
       &-navs{
         height: auto;
-        width: auto;
+        width: 100%;
         align-items: center;
         flex-direction: column;
         &-home{
