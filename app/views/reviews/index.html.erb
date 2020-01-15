@@ -1,13 +1,3 @@
-<%# <label>
-        <div class="main-top-lists-navbar">
-        <form class="main-top-lists-navbar-form" id="review_seach" action="/reviews/serch" accept-charset="UTF-8" method="get">
-            <input name="utf8" type="hidden" value="✓">
-            <input placeholder="Dounutsを検索" class="main-top-lists-navbar-form-serch" type="text" name="q[name_cont]" id="q_name_cont">
-            <button name="button" type="submit" class="main-top-lists-navbar-form-button">  
-              <i class="fas fa-search main-top-lists-navbar-form-button-icon"></i>
-        </div>
-        </label> %>
-
 
 <div class="screen">
   <%= render partial: "layouts/top-header" %>
@@ -59,4 +49,5 @@
       </div>
     </div>
   </div>
+  <%= render partial: "layouts/top-footer"%>
 </div>

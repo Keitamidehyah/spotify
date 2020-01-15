@@ -1,0 +1,21 @@
+.footer{
+  width: 30%;
+  height: 100%;
+  background-color: rgb(34, 34, 77);
+  // overflow: hidden;
+  &-search{
+    @include main-color;
+    height: 100px;
+    width: 100%;
+    border-bottom: solid rgb(90, 130, 172) 1px;
+    &-box{
+      height: 40px;
+      @include main-color;
+      border: solid rgb(90, 130, 172) 1px 2px;
+      border-radius: 40px;
+      float: right;
+      padding: 10px;
+      border: none;
+    }
+  }
+}
