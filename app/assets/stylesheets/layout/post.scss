@@ -1,0 +1,20 @@
+.Postpage{
+  height: 100%;
+  width: 80%;
+  @include main-color;
+  border-left: solid rgb(90, 130, 172) 1px;
+  &-header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    border-bottom: solid rgb(90, 130, 172) 1px;
+    .text2{
+      font-size: 25px;
+      text-decoration: none;
+      color: white;
+      margin: 0;
+      padding: 24px;
+      font-family: monospace;
+    }
+  }
+}
