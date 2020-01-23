@@ -1,16 +1,17 @@
-html, body {
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  /*タッチデバイスやmacでスクロールされないようにする*/
+html{
+  height: 100%;
   overflow: hidden;
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 
  @import "mixin/form";
  @import "layout/top-header";
+ @import "layout/top-footer";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @import "layout/index";

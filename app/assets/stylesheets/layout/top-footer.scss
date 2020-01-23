@@ -1,0 +1,58 @@
+.footer{
+  width: 30%;
+  height: 100%;
+  background-color: rgb(34, 34, 77);
+  // overflow: hidden;
+  &-search{
+    @include main-color;
+    height: 100px;
+    width: 100%;
+    border-bottom: solid rgb(90, 130, 172) 1px;
+    &-box{
+      height: 40px;
+      width: 300px;
+      background:none;
+      border: none;
+      padding-top: 24px;
+      padding-left: 100px;
+      text-align : center ;
+      #form4{
+        position:relative;
+        max-width:300px;	
+        margin-bottom:20px;
+        padding-left: 50px;
+        }
+      #sbox4{
+        height:46px;
+        width: 270px;
+        padding:0 10px; 
+        position:absolute; 
+        left:0;
+        top:0; 
+        border-radius:25px;
+        outline:0;
+        background:#eee;
+        }
+        #sbtn4{
+          height:50px;
+          width:50px;	
+          position:absolute; 
+          left:250px; 
+          top:0;
+          background:rgb(99, 99, 245);
+          color:#fff;
+          border:none;
+          border-radius:0 25px 25px 0;
+        }
+        #sbtn4 .fa-search{
+          font-size:20px;	
+          position:absolute;
+          top:30%;
+          left:30%;	
+        }
+        #sbtn4:hover{
+          color:#888;
+        }
+    }
+  }
+}
