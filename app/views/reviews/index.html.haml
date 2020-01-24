@@ -9,6 +9,7 @@
         .main-reviews-contents-users
           .main-reviews-contents-users-icon
             .main-reviews-contents-users-icon-circle
+              -# = image_tag src="/assets/kabao.jpeg"
           .main-reviews-contents-soundcloud
             %iframe.main-reviews-contents-soundcloud-track{:allow => "autoplay", :frameborder => "no", :height => "300", :scrolling => "no", :src => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/509113785&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", :width => "100%"}
           .main-reviews-contents-users-para
@@ -22,10 +23,10 @@
         .main-reviews-contents-bottom
           .main-reviews-contents-bottom-reaction
             .main-reviews-contents-bottom-reaction-comment
-              %a{:href => "#"}
+              =link_to "#" do
                 %i.far.fa-comment
             .main-reviews-contents-bottom-reaction-good
-              %a{:href => "#"}
+              =link_to "#" do
                 %i.fas.fa-record-vinyl
           .main-reviews-contents-bottom-box
             .main-reviews-contents-bottom-box-name
