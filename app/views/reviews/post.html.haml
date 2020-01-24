@@ -1,0 +1,12 @@
+%body
+  .screen
+    = render partial: "layouts/top-header"
+    .Postpage
+      %header.Postpage-header
+        %p.text2 Choice 1 Dounuts
+        .Postpage-header-search
+          %form#form3{:action => "自分のサイトURL", :method => "get"}
+            %input#sbox3{:name => "s", :placeholder => "Track search", :type => "text"}/
+            %button#sbtn3{:type => "submit"}
+              %i.fas.fa-search
+      .Postpage-result
