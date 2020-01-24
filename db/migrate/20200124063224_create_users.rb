@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :introduction
       t.string :profimage
       t.string :account
-  
+
       t.timestamps
     end
   end
