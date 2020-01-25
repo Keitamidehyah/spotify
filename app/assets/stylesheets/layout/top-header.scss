@@ -95,6 +95,39 @@
             @include header-hover-color;
           }
         }
+        &-user{
+          @include button-boxes;
+          .user-button{
+            @include buttons;
+            .fa-id-card{
+              margin-right: 10px;
+            }
+          }
+          .user-button i{
+            @include header-hover-icon;
+          }
+          .user-button span {
+            @include header-hover-span
+          }
+          
+          .user-button::before,
+          .user-button::after {
+            @include header-hover-after1;
+          }
+          .user-button::before {
+            left: 0;
+          }
+          .user-button::after {
+            right: 0;
+          }
+          .user-button:hover:before,
+          .user-button:hover:after {
+            @include header-hover-after2;
+          }
+          .user-button:hover {
+            @include header-hover-color;
+          }
+        }
         &-DM{
           @include button-boxes;
           .DM-button{
