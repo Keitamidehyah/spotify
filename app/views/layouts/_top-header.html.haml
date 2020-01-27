@@ -10,10 +10,16 @@
             %a.home-button{:href => "#"}
               %i.fas.fa-home
               %span Home
+        - if user_signed_in?
           .header-box-lowbox-navs-profile
             %a.profile-button{:href => "#"}
               %i.fas.fa-id-card
               %span Profile
+        - else
+          .header-box-lowbox-navs-login
+            %a.login-button{:href => "#"}
+              %i.fas.fa-sign-in-alt
+              %span Log in
           .header-box-lowbox-navs-DM
             %a.DM-button{:href => "#"}
               %i.far.fa-envelope

@@ -62,6 +62,39 @@
             @include header-hover-color;
           }
         }
+        &-login{
+          @include button-boxes;
+          .login-button{
+            @include buttons;
+            .fa-id-card{
+              margin-right: 10px;
+            }
+          }
+          .login-button i{
+            @include header-hover-icon;
+          }
+          .login-button span {
+            @include header-hover-span
+          }
+          
+          .login-button::before,
+          .login-button::after {
+            @include header-hover-after1;
+          }
+          .login-button::before {
+            left: 0;
+          }
+          .login-button::after {
+            right: 0;
+          }
+          .login-button:hover:before,
+          .login-button:hover:after {
+            @include header-hover-after2;
+          }
+          .login-button:hover {
+            @include header-hover-color;
+          }
+        }
         &-profile{
           @include button-boxes;
           .profile-button{
